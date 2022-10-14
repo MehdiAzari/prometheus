@@ -32,6 +32,8 @@ services:
     networks:
       - back-tier
     restart: always
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 #    deploy:
 #      placement:
 #        constraints:
